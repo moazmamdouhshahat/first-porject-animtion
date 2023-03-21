@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+.home{
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    margin-top: 90px;
+}
+.home .div1{
+    width: 100%;
+    height: 25vh;
+    background-color: black;
+    position: relative;
+}
+.home .div1 img{
+    position: absolute;
+    bottom: 1%;
+    left: -0%;
+    animation-name: laftTOright ;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+.home .div2{
+    border-top: 8px dashed wheat ;
+    border-bottom: 8px dashed wheat ;
+    width: 100%;
+    height: 25vh;
+    background-color: black;
+    position: relative;
+}
+.home .div2 img{
+
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    transform: rotateY(180deg);
+    animation-name: rightTOlaft ;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+.home .div3{
+    width: 100%;
+    height: 25vh;
+    background-color: black;
+    position: relative;
+    
+}
+
+.home .div3 img{
+    position: absolute;
+    bottom: 1%;
+    left: -0%;
+    animation-name: laftTOright ;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+.home div img{
+    width: 140px; 
+    height: 140px;
+}
+/* /////////////////////// anmetion /////////////////////  */
+
+@keyframes laftTOright{
+25%{
+    bottom: 1%;
+    left: 150%;
+
+     
+}
+50%{
+
+    transform: rotateY(200deg);
+}
+
+75%{
+
+    bottom: 1%;
+    left: -20%;
+
+
+}
+
+
+}
+
+
+@keyframes rightTOlaft{
+    25%{
+        bottom: 1%;
+        right: 140%;
+    
+         
+    }
+    50%{
+    
+        transform: rotateY(400deg);
+    }
+    
+    75%{
+    
+        bottom: 1%;
+        right: -20%;
+    
+    
+    }
+    
+    
+    }
